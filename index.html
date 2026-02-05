@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<title>उड्डाण फाउंडेशन</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f3f5f8;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+  background-color: #0b3558;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 55px;
+  margin-right: 15px;
+}
+
+.logo h1 {
+  font-size: 26px;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* SLIDE ANIMATION */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(90deg, #1e88e5, #64b5f6);
+  color: white;
+  padding: 70px 40px;
+  animation: slideIn 1.2s ease-out;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 800px;
+}
+
+/* SECTION */
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+}
+
+.card {
+  background: white;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  color: #0b3558;
+  margin-bottom: 15px;
+}
+
+.card img {
+  width: 100%;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* ACTIVITIES */
+.activities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.activity {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  border-left: 6px solid #1e88e5;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* CONTACT */
+.contact-box {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  max-width: 650px;
+  margin: auto;
+}
+
+/* FOOTER */
+footer {
+  background-color: #0b3558;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
+    <h1>उड्डाण फाउंडेशन</h1>
+  </div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#activities">Activities</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>विद्यार्थ्यांच्या उज्ज्वल भविष्यासाठी उड्डाण</h2>
+  <p>
+    उड्डाण फाउंडेशन ही विद्यार्थ्यांच्या शैक्षणिक,
+    सामाजिक व नैतिक विकासासाठी कार्य करणारी
+    सामाजिक संस्था आहे. प्रत्येक विद्यार्थ्याला
+    योग्य दिशा, संधी व प्रेरणा मिळावी हा आमचा
+    मुख्य उद्देश आहे.
+  </p>
+</div>
+
+<section id="home">
+  <div class="grid">
+    <div class="card">
+      <h3>आमचे ध्येय</h3>
+      <p>
+        समाजातील प्रत्येक मुलाला शिक्षणाची समान
+        संधी मिळावी, त्याच्या सुप्त गुणांना
+        वाव मिळावा आणि तो आत्मविश्वासाने
+        पुढे जावा यासाठी उड्डाण फाउंडेशन
+        सातत्याने कार्यरत आहे.
+      </p>
+      <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b">
+    </div>
+
+    <div class="card" id="about">
+      <h3>आमच्याबद्दल</h3>
+      <p>
+        उड्डाण फाउंडेशनची स्थापना गरजू,
+        अनाथ व होतकरू विद्यार्थ्यांना आधार
+        देण्यासाठी करण्यात आली.
+        शिक्षणासोबतच स्वच्छता,
+        संस्कृती, इतिहास व राष्ट्रप्रेम
+        जपण्याचे कार्य संस्था करते.
+      </p>
+      <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7">
+    </div>
+  </div>
+</section>
+
+<section id="activities">
+  <h2 style="color:#0b3558;">आमचे उपक्रम</h2>
+  <div class="activities">
+    <div class="activity">अनाथ व गरजू मुलांना शालेय साहित्य व शैक्षणिक मदत</div>
+    <div class="activity">कालसुबाईसारख्या शिखरांवर स्वच्छता मोहिमा</div>
+    <div class="activity">आग्रा ते राजगड – शिवज्योत उपक्रमात सहभाग</div>
+    <div class="activity">शिवप्रेमी व राष्ट्रभक्तीपर सामाजिक उपक्रम</div>
+    <div class="activity">बाल शौर्य पुरस्कार देऊन मुलांना प्रेरणा</div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-box">
+    <h2 style="color:#0b3558;">संपर्क माहिती</h2>
+    <p><b>पत्ता:</b><br>जिल्हा नाशिक, तालुका सिन्नर, महाराष्ट्र</p>
+    <p><b>संपर्क क्रमांक:</b><br>8806767167</p>
+    <p>सामाजिक उपक्रमांसाठी व माहितीसाठी संपर्क साधावा.</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 उड्डाण फाउंडेशन | सर्व हक्क राखीव
+</footer>
+
+</body>
+</html>
